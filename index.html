@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80fb57a4d9.js" crossorigin="anonymous"></script>
+    <script src="app.js" ></script>
+</head>
+<body>
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/mylogo.jpg" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                  <a href="#" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black">About</a>
+                </li>
+                <li class="nav__link">
+                  <a href="#" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black">Projects</a>
+                </li>
+                <li class="nav__link">
+                  <a href="#" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black">Contact</a>
+                </li>
+                <li class="nav__link click">
+                  <a href="#" class="
+                  nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black
+                  "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title orange">I'm Shanon</h1>
+                <p class="header__para">I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
+                    <br>Here's a bit more <b class="orange">about me</b>.
+                </p>
+                <div class="social__list">
+                    <a href="https://google.com" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://google.com" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="./assets/Resume 8-24-21.pdf" target="_blank" class="social__link click">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <button class="mail__button click">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="orange">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__discription">
+                                <h3 class="project__discription--title">Google In-Store </h3>
+                                <h4 class="project__discription--sub-title">Html, CSS, JavaScript, Vue, Vuex</h4>
+                                <p class="project__discription--para">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.                                    
+                                </p>
+                                <div class="project__discription--links">
+                                    <a href="#" class="project__discription--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__discription--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
