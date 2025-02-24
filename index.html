@@ -50,10 +50,10 @@
                     <br>Here's a bit more <b class="orange">about me</b>.
                 </p>
                 <div class="social__list">
-                    <a href="https://google.com" target="_blank" class="social__link click">
+                    <a href="https://www.linkedin.com/in/shanon-winkelman/" target="_blank" class="social__link click">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="https://google.com" target="_blank" class="social__link click">
+                    <a href="https://github.com/shanonwinkelman" target="_blank" class="social__link click">
                         <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="./assets/Resume 8-24-21.pdf" target="_blank" class="social__link click">
@@ -68,6 +68,56 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a little bit about me.</h3>
+                <h4 class=" modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para modal__para--about">I'm a 54 year-old American <b class="orange">frontend software engineer</b> with experience developing websites with great <b class="orange">user experiences.</b>
+                <br>
+                    I currently solve extremely difficult engineering problems every day with React, TypeScript and MobX in Canva's Video team.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                        <span class="language__name">React</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                      <label class="form__item--label">Name</label>
+                      <input class="input" name="user_name" type="text" required="">
+                    </div>
+                    <div class="form__item">
+                      <label class="form__item--label">Email</label>
+                      <input class="input" name="user_email" type="email" required="">
+                    </div>
+                    <div class="form__item">
+                      <label class="form__item--label">Message</label>
+                      <textarea class="input" name="message" type="text" required=""></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                      Send it my way
+                    </button>
+                  </form>
+            </div>
+        </div>
     </section>
     <section id="projects">
         <div class="container">
@@ -76,18 +126,58 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/Treact Project.PNG" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
-                            <div class="project__discription">
-                                <h3 class="project__discription--title">Google In-Store </h3>
-                                <h4 class="project__discription--sub-title">Html, CSS, JavaScript, Vue, Vuex</h4>
-                                <p class="project__discription--para">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.                                    
+                            <div class="project__description">
+                                <h3 class="project__description--title">Google In-Store </h3>
+                                <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
+                                <p class="project__description--para">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.                                    
                                 </p>
-                                <div class="project__discription--links">
-                                    <a href="#" class="project__discription--link">
+                                <div class="project__description--links">
+                                    <a href="https://github.com/shanonwinkelman" class="project__description--link">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
-                                    <a href="#" class="project__discription--link">
+                                    <a href="https://shanonwinkelman.github.io/Final-Project/" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Treact Project.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">Google In-Store </h3>
+                                <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
+                                <p class="project__description--para">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.                                    
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/shanonwinkelman" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://shanonwinkelman.github.io/Final-Project/" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Treact Project.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">Google In-Store </h3>
+                                <h4 class="project__description--sub-title">Html, CSS, JavaScript</h4>
+                                <p class="project__description--para">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.                                    
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/shanonwinkelman" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://shanonwinkelman.github.io/Final-Project/" class="project__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
                                 </div>
@@ -98,5 +188,41 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" src="./assets/mylogo.jpg" alt="">
+            </figure>    
+            <div class="footer__social--list">
+                <a href="#" class="
+                  footer__social--link
+                  link__hover-effect 
+                  link__hover-effect--white">
+                  Github               
+                </a>
+                <a href="#" class="
+                  footer__social--link
+                  link__hover-effect
+                  link__hover-effect--white">
+                  LinkedIn               
+                </a>
+                <a href="#" class="
+                  footer__social--link
+                  link__hover-effect
+                  link__hover-effect--white">
+                  Contact               
+                </a>
+                <a href="#" class="
+                  footer__social--link
+                  link__hover-effect
+                  link__hover-effect--white">
+                  Resume               
+                </a>
+            </div>
+            <div class="footer__copyright">Copyright © 2025 Shanon Winkelman</div>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
